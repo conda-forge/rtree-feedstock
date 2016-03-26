@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rtree-feedstock.svg?sty
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/rtree-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rtree-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rtree-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rtree-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rtree/badges/version.svg)](https://anaconda.org/conda-forge/rtree)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rtree/badges/downloads.svg)](https://anaconda.org/conda-forge/rtree)
+
 
 Updating rtree-feedstock
 ========================
