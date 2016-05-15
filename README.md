@@ -5,7 +5,7 @@ Home: http://toblerity.github.com/rtree/
 
 Package license: GNU Library or Lesser General Public License (LGPL)
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: R-Tree spatial index for Python GIS
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rtree-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/rtree-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/rtree-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rtree-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rtree-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rtree-feedstock/branch/master)
