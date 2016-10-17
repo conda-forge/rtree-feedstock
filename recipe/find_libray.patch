@@ -71,15 +71,3 @@ diff -Naur rtree-f5ee10617b84a681cb69e7a921aa1b1113d8debd.orig/rtree/core.py rtr
  else:
      raise RTreeError('Unsupported OS "%s"' % os.name)
  
-diff -Naur rtree-f5ee10617b84a681cb69e7a921aa1b1113d8debd.orig/setup.py rtree-f5ee10617b84a681cb69e7a921aa1b1113d8debd/setup.py
---- rtree-f5ee10617b84a681cb69e7a921aa1b1113d8debd.orig/setup.py	2016-10-16 01:12:17.000000000 -0300
-+++ rtree-f5ee10617b84a681cb69e7a921aa1b1113d8debd/setup.py	2016-10-17 07:29:22.558118808 -0300
-@@ -35,7 +35,7 @@
-     packages      = ['rtree'],
-     install_requires = ['setuptools'],
-     test_suite = 'tests.test_suite',
--    data_files = data_files,
-+    data_files = None,
-     zip_safe = False,
-     classifiers   = [
-       'Development Status :: 5 - Production/Stable',
