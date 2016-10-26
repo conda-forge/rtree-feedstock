@@ -3,11 +3,11 @@ About rtree
 
 Home: http://toblerity.github.com/rtree/
 
-Package license: GNU Library or Lesser General Public License (LGPL)
+Package license: LGPL-2.1
 
 Feedstock license: BSD 3-Clause
 
-Summary: R-Tree spatial index for Python GIS
+Summary: R-Tree spatial index for Python GIS.
 
 
 
