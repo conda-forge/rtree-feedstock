@@ -14,14 +14,16 @@ Summary: R-Tree spatial index for Python GIS.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rtree-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rtree-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/rtree-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rtree-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rtree-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rtree-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/rtree-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/rtree-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/rtree-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/rtree-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/rtree-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/rtree-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rtree/badges/version.svg)](https://anaconda.org/conda-forge/rtree)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rtree/badges/downloads.svg)](https://anaconda.org/conda-forge/rtree)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rtree-green.svg)](https://anaconda.org/conda-forge/rtree) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rtree.svg)](https://anaconda.org/conda-forge/rtree) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rtree.svg)](https://anaconda.org/conda-forge/rtree) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rtree.svg)](https://anaconda.org/conda-forge/rtree) |
 
 Installing rtree
 ================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
