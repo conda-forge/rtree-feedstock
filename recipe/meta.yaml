@@ -5,7 +5,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: rtree-{{ version }}.tar.gz
   url: https://github.com/Toblerity/rtree/archive/{{ version }}.tar.gz
   sha256: ab9d29ea3935d189ce32217ad5f5aff464a7ded9e9f9777e2d8dbf11dcf90b93
   patches:
@@ -15,13 +14,12 @@ source:
 
 build:
   number: 0
-  preserve_egg_dir: True
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .  # [not win]
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
     - libspatialindex
   run:
     - python
@@ -30,9 +28,6 @@ requirements:
 test:
   imports:
     - rtree
-  commands:
-    - conda inspect linkages -p $PREFIX rtree  # [not win]
-    - conda inspect objects -p $PREFIX rtree  # [osx]
 
 about:
   home: http://toblerity.github.com/rtree/
