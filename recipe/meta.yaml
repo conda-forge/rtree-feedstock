@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/Toblerity/rtree/archive/{{ version }}.tar.gz
-  sha256: ab9d29ea3935d189ce32217ad5f5aff464a7ded9e9f9777e2d8dbf11dcf90b93
+  url: https://pypi.io/packages/source/R/Rtree/Rtree-{{ version }}.tar.gz
+  sha256: 6cb9cf3000963ea6a3db777a597baee2bc55c4fc891e4f1967f262cc96148649
   patches:
     - find_libray.patch
     - setup-win.path  # [win]

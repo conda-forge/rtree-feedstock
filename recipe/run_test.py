@@ -150,7 +150,7 @@ def test_index():
     assert idx.interleaved == unpickled.interleaved
 
 def test_property():
-    p = rtree.index.Property()
+    p = index.Property()
     unpickled = pickle.loads(pickle.dumps(p))
     assert p.handle is not unpickled.handle
     assert p.as_dict() == unpickled.as_dict()
