@@ -13,7 +13,7 @@ source:
     - find_libray-win32.patch  # [win32]
 
 build:
-  number: 0
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .  # [not win]
 
 requirements:
