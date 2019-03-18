@@ -13,8 +13,8 @@ source:
     - find_libray-win32.patch  # [win32]
 
 build:
-  number: 1000
-  script: python -m pip install --no-deps --ignore-installed .  # [not win]
+  number: 1001
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   home: http://toblerity.github.com/rtree/
   license: LGPL-2.1
   license_file: LICENSE.txt
-  summary: 'R-Tree spatial index for Python GIS.'
+  summary: 'R-Tree spatial index for Python GIS'
 
 extra:
   recipe-maintainers:
