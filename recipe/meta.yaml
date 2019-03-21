@@ -9,11 +9,11 @@ source:
   sha256: 6cb9cf3000963ea6a3db777a597baee2bc55c4fc891e4f1967f262cc96148649
   patches:
     - find_libray.patch
-    - setup-win.path  # [win]
-    - find_libray-win32.patch  # [win32]
+    - setup-win.patch  # [win]
 
 build:
   number: 1002
+  skip: True  # [win and vc<14]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
 requirements:
