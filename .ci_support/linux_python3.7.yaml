@@ -6,7 +6,11 @@ channel_targets:
 - conda-forge main
 docker_image:
 - condaforge/linux-anvil-comp7
+libspatialindex:
+- '1.9'
 pin_run_as_build:
+  libspatialindex:
+    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
