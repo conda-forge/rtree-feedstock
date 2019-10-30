@@ -12,7 +12,7 @@ source:
     - setup-win.patch  # [win]
 
 build:
-  number: 1002
+  number: 1003
   skip: True  # [win and vc<14]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
@@ -20,12 +20,10 @@ requirements:
   host:
     - python
     - pip
-    - libspatialindex 1.8.5  # [win]
-    - libspatialindex  # [not win]
+    - libspatialindex
   run:
     - python
-    - libspatialindex 1.8.5  # [win]
-    - libspatialindex  # [not win]
+    - libspatialindex
 
 test:
   imports:

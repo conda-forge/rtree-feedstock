@@ -1,5 +1,3 @@
-build_number_decrement:
-- '0'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -7,7 +5,7 @@ channel_targets:
 docker_image:
 - condaforge/linux-anvil-comp7
 libspatialindex:
-- '1.9'
+- 1.9.3
 pin_run_as_build:
   libspatialindex:
     max_pin: x.x
