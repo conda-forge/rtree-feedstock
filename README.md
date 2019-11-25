@@ -3,7 +3,7 @@ About rtree
 
 Home: http://toblerity.github.com/rtree/
 
-Package license: LGPL-2.1
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
@@ -211,5 +211,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@hobu](https://github.com/hobu/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
