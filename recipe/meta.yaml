@@ -28,7 +28,7 @@ test:
 
 about:
   home: http://toblerity.github.com/rtree/
-  license: LGPL-2.1
+  license: MIT
   license_file: LICENSE.txt
   summary: 'R-Tree spatial index for Python GIS'
 
