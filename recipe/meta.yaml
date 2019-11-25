@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.9.0" %}
 
 package:
   name: rtree
@@ -6,13 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/R/Rtree/Rtree-{{ version }}.tar.gz
-  sha256: 6cb9cf3000963ea6a3db777a597baee2bc55c4fc891e4f1967f262cc96148649
-  patches:
-    - find_libray.patch
-    - setup-win.patch  # [win]
+  sha256: 37ce6017359f106d6ce25864b42bff7a4ed5eb9dce8d2793d40b328cafc1b9c9
 
 build:
-  number: 1003
+  number: 0
   skip: True  # [win and vc<14]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
@@ -38,3 +35,4 @@ about:
 extra:
   recipe-maintainers:
     - ocefpaf
+    - hobu
