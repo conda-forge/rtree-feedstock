@@ -1,4 +1,4 @@
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: rtree
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/R/Rtree/Rtree-{{ version }}.tar.gz
-  sha256: cae327e2c03b3da4ea40d0fdf68f3e55fe9f302c56b9f31e1bfeb36dbea73f44
+  sha256: 70387692061f8b5c45b1ae258fbd9a20b2f04b04af17af49545aeffaab443270
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
+  number: 0
+  skip: true  # [win and vc<14]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   home: http://toblerity.github.com/rtree/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'R-Tree spatial index for Python GIS'
+  summary: R-Tree spatial index for Python GIS
 
 extra:
   recipe-maintainers:
