@@ -1,4 +1,4 @@
-{% set version = "0.9.5" %}
+{% set version = "0.9.7" %}
 
 package:
   name: rtree
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/R/Rtree/Rtree-{{ version }}.tar.gz
-  sha256: 70387692061f8b5c45b1ae258fbd9a20b2f04b04af17af49545aeffaab443270
+  sha256: be8772ca34699a9ad3fb4cfe2cfb6629854e453c10b3328039301bbfc128ca3e
 
 build:
   number: 0
