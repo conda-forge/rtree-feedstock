@@ -10,16 +10,16 @@ source:
 
 build:
   number: 2
-  skip: true  # [win and vc<14]
+  skip: true  # [win and vc<14 and py36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - pip
     - libspatialindex
   run:
-    - python >=3.7
+    - python
     - libspatialindex
 
 test:
