@@ -1,4 +1,2 @@
-provider:
-  win: azure
 conda_forge_output_validation: true
-provider: {linux_aarch64: default}
+provider: {linux_aarch64: default, win: azure}
