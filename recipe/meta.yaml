@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [win and vc<14 or py36]
+  skip: true  # [win and vc<14 or py>36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
@@ -28,6 +28,8 @@ requirements:
 test:
   imports:
     - rtree
+  requires:
+    - typing_extensions  # [py<38]
 
 about:
   home: http://toblerity.github.com/rtree/
