@@ -1,11 +1,7 @@
-cdt_name:
-- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
 libspatialindex:
 - 1.9.3
 pin_run_as_build:
@@ -13,6 +9,8 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.8.* *_73_pypy
 target_platform:
-- linux-ppc64le
+- win-64
+vc:
+- '14'
