@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: rtree
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/R/Rtree/Rtree-{{ version }}.tar.gz
-  sha256: 222121699c303a64065d849bf7038b1ecabc37b65c7fa340bedb38ef0e805429
+  sha256: 6f8ee504dde5d005b25b08aaf5be0b3404af3ad5fece6e1ddcde35908a798a95
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win and vc<14 or py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
@@ -28,8 +28,6 @@ requirements:
 test:
   imports:
     - rtree
-  requires:
-    - typing_extensions  # [py<38]
 
 about:
   home: https://github.com/Toblerity/rtree
