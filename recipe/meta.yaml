@@ -28,8 +28,6 @@ requirements:
 test:
   imports:
     - rtree
-  requires:
-    - typing_extensions  # [py<38]
 
 about:
   home: https://github.com/Toblerity/rtree
