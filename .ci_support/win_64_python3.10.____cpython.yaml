@@ -3,7 +3,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libspatialindex:
-- 1.9.3
+- 2.0.0
 pin_run_as_build:
   python:
     min_pin: x.x

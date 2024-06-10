@@ -7,7 +7,7 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 libspatialindex:
-- 1.9.3
+- 2.0.0
 pin_run_as_build:
   python:
     min_pin: x.x
