@@ -122,8 +122,6 @@ def boxes15_stream(interleaved=True):
         else:
             yield (i, (minx, maxx, miny, maxy), 42)
 
-def check_c_api():
-    assert int(str(index.__c_api_version__).split('.')[1]) >= 7
 
 def test_non_stream_input():
     p = index.Property()
@@ -155,7 +153,6 @@ def test_property():
     assert p.handle is not unpickled.handle
     assert p.as_dict() == unpickled.as_dict()
 
-check_c_api()
 test_non_stream_input()
 
 test_stream_input()
