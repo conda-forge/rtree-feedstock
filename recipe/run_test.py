@@ -1,11 +1,15 @@
-import os
-try:
-    import cPickle as pickle
-except ImportError:
-    import pickle
+import pickle
+
 from rtree import index
 from rtree.index import Rtree
 
+import pytest
+
+# Run pytest included with rtree
+retcode = pytest.main()
+assert retcode == pytest.ExitCode.OK, retcode
+
+# Run local tests
 data = """34.3776829412 26.7375853734 49.3776829412 41.7375853734
 -51.7912278527 56.5716384064 -36.7912278527 71.5716384064
 -132.417278478 -96.7177218184 -117.417278478 -81.7177218184

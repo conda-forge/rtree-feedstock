@@ -9,7 +9,7 @@ source:
   sha256: b36e9dd2dc60ffe3d02e367242d2c26f7281b00e1aaf0c39590442edaaadd916
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14 or py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
@@ -28,6 +28,11 @@ requirements:
 test:
   imports:
     - rtree
+  requires:
+    - pytest
+    - numpy
+  source_files:
+    - tests/
 
 about:
   home: https://github.com/Toblerity/rtree
