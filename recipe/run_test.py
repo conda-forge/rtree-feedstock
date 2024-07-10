@@ -1,4 +1,5 @@
 import pickle
+import platform
 
 from rtree import index
 from rtree.index import Rtree
@@ -6,8 +7,13 @@ from rtree.index import Rtree
 import pytest
 
 # Run pytest included with rtree
-retcode = pytest.main()
-assert retcode == pytest.ExitCode.OK, retcode
+args = ["-v"]
+if platform.python_implementation() == "PyPy":
+    # https://github.com/Toblerity/rtree/issues/324
+    args += ["-k", "not test_custom_filenames"]
+
+retcode = pytest.main(args)
+assert retcode == pytest.ExitCode.OK
 
 # Run local tests
 data = """34.3776829412 26.7375853734 49.3776829412 41.7375853734
