@@ -1,19 +1,30 @@
 import pickle
 import platform
+import sysconfig
 
 from rtree import index
 from rtree.index import Rtree
 
-import pytest
+print("platform.python_implementation()", platform.python_implementation())
+print("sysconfig.get_platform()", sysconfig.get_platform())
 
-# Run pytest included with rtree
-args = ["-v"]
-if platform.python_implementation() == "PyPy":
-    # https://github.com/Toblerity/rtree/issues/324
-    args += ["-k", "not test_custom_filenames"]
+# skip running pytest avoid seg fault with some PyPy combos
+skip_pytest = (
+    platform.python_implementation() == "PyPy"
+    and sysconfig.get_platform() != "linux-x86_64"
+)
+if not skip_pytest:
 
-retcode = pytest.main(args)
-assert retcode == pytest.ExitCode.OK
+    import pytest
+
+    # Run pytest included with rtree
+    args = ["-v"]
+    if platform.python_implementation() == "PyPy":
+        # https://github.com/Toblerity/rtree/issues/324
+        args += ["-k", "not test_custom_filenames"]
+
+    retcode = pytest.main(args)
+    assert retcode == pytest.ExitCode.OK
 
 # Run local tests
 data = """34.3776829412 26.7375853734 49.3776829412 41.7375853734
