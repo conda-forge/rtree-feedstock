@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/R/Rtree/rtree-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/R/Rtree/rtree-{{ version }}.tar.gz
   sha256: b36e9dd2dc60ffe3d02e367242d2c26f7281b00e1aaf0c39590442edaaadd916
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win and vc<14 or py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
