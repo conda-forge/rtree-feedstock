@@ -7,7 +7,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libspatialindex:
-- 2.0.0
+- 2.1.0
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -23,4 +23,3 @@ target_platform:
 zip_keys:
 - - python
   - numpy
-  - channel_sources
