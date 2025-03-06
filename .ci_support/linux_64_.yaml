@@ -10,3 +10,5 @@ libspatialindex:
 - 2.1.0
 numpy:
 - '2'
+python_min:
+- '3.9'
