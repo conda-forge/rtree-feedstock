@@ -1,0 +1,11 @@
+--- rtree-1.4.0.orig/setup.py	2025-03-05 20:23:54.000000000 -0300
++++ rtree-1.4.0/setup.py	2025-03-07 14:15:02.339386092 -0300
+@@ -58,6 +58,6 @@
+ # See pyproject.toml for other project metadata
+ setup(
+     name="rtree",
+-    distclass=BinaryDistribution,
+-    cmdclass={"bdist_wheel": bdist_wheel, "install": InstallPlatlib},
++    # distclass=BinaryDistribution,
++    # cmdclass={"bdist_wheel": bdist_wheel, "install": InstallPlatlib},
+ )
