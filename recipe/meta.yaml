@@ -1,5 +1,5 @@
 {% set name = "rtree" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rtree-{{ version }}.tar.gz
-  sha256: 9d97c7c5dcf25f6c0599c76d9933368c6a8d7238f2c1d00e76f1a69369ca82a0
+  sha256: c6b1b3550881e57ebe530cc6cffefc87cd9bf49c30b37b894065a9f810875e46
   patches:
     - noarch.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
