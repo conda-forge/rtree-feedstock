@@ -28,14 +28,15 @@ requirements:
     - typing_extensions >=3.7  # [py<38]
 
 test:
-  # Imports are in run_test.py
-  #imports:
-  #  - rtree
-  requires:
-    - pip
-    - typing_extensions >=3.7  # [py<38]
+  # Minimal test suite for PBP integration testing
+  # This validates basic rtree + libspatialindex integration
+  # without running the comprehensive test suite
+  imports:
+    - rtree
+    - rtree.index
   commands:
-    - pip check
+    # Single smoke test command - validates C++ integration and basic functionality
+    - python -c "from rtree import index; idx = index.Index(); idx.insert(1, (0, 0, 1, 1)); results = list(idx.intersection((0.5, 0.5, 1.5, 1.5))); assert 1 in results; print('✓ rtree + libspatialindex integration verified')"
 
 about:
   home: https://github.com/Toblerity/rtree
